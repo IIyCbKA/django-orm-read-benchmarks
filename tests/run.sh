@@ -20,11 +20,11 @@ python -m test_2
 # Test 3 -> Single-row retrieval as a tuple of field values
 python -m test_3
 
-# Test 4 -> Retrieval of 1,000 rows as model instances
+# Test 4 -> Retrieval of 2,500 rows as model instances
 python -m test_4
 
-# Test 5 -> Retrieval of 1,000 rows as key-value dictionaries
+# Test 5 -> Retrieval of 2,500 rows as key-value dictionaries
 python -m test_5
 
-# Test 6 -> Retrieval of 1,000 rows as tuples of field values
+# Test 6 -> Retrieval of 2,500 rows as tuples of field values
 python -m test_6

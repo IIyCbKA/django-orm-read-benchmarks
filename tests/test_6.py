@@ -11,8 +11,8 @@ from core.models import Booking
 from django.db import connection
 connection.ensure_connection()
 
-SELECT_REPEATS = int(os.environ.get('SELECT_REPEATS', '25'))
-LIMIT = int(os.environ.get('LIMIT', '1000'))
+SELECT_REPEATS = int(os.environ.get('SELECT_REPEATS', '75'))
+LIMIT = int(os.environ.get('LIMIT', '2500'))
 
 
 def select_iteration() -> int:
@@ -42,7 +42,7 @@ def main() -> None:
   elapsed = statistics.median(elapsed_results)
 
   print(
-    f'Test 6. Retrieval of 1,000 rows as tuples of field values\n'
+    f'Test 6. Retrieval of 2,500 rows as tuples of field values\n'
     f'elapsed_ns={elapsed}'
   )
 
